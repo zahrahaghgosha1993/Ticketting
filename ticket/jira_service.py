@@ -26,3 +26,4 @@ def create_issue(summary, description, issuetype, project_key):
         return response
     except Exception:
         raise DefaultServerError
+ce
