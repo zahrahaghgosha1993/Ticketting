@@ -144,3 +144,17 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+JIRA_BASE_API_URL ="https://gioome.atlassian.net/rest/api/2/issue/10025"
+
+JIRA_USER_TOKEN = "emFocmFoYWdoZ29zaGFAZ21haWwuY29tOm9DaFZrSHkycGltTmkzVTdOSnQ2RkJGMQ=="
+JIRA_API_HEADERS = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    "Authorization": "Basic {}".format(JIRA_USER_TOKEN)
+}
+
+JIRA_UPLOAD_FILE_API_HEADERS = {
+    'Accept': 'application/json',
+    "Authorization": "Basic {}".format(JIRA_USER_TOKEN),
+    "X-Atlassian-Token": "nocheck"
+}
