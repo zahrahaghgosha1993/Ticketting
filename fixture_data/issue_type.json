@@ -1,0 +1,59 @@
+[
+    {
+        "model": "ticket.issuetype",
+        "pk": 10007,
+        "fields": {
+             "description": "A task that needs to be done.",
+             "name": "Task"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10002,
+        "fields": {
+             "description": "A request that follows ITSM workflows.",
+             "name": "[System] Service request"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10008,
+        "fields": {
+             "description": "The sub-task of the issue",
+             "name": "Sub-task"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10001,
+        "fields": {
+             "description": "For system outages or incidents. Created by Jira Service Management",
+             "name": "[System] Inciden"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10005,
+        "fields": {
+             "description": "Track underlying causes of incidents. Created by Jira Service Management",
+             "name": "[System] Problem"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10004,
+        "fields": {
+             "description": "Created by Jira Service Management",
+             "name": "[System] Change"
+        }
+    },
+    {
+        "model": "ticket.issuetype",
+        "pk": 10003,
+        "fields": {
+             "description": "A request that follows ITSM workflows.",
+             "name": "[System] Service request with approvals"
+        }
+    }
+]
+

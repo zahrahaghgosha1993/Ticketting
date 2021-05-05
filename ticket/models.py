@@ -14,7 +14,7 @@ class IssueType(models.Model):
 class Ticket(models.Model):
     summary = models.CharField(max_length=100, null=True, blank=True)
     description = models.CharField(max_length=700, null=True, blank=True)
-    status = models.CharField(choices=constant.STATUS_CHOOSE, max_length=20)
+    status = models.CharField(choices=constant.STATUS_CHOOSE, max_length=20, default=constant.OPEN)
     issue_type = models.ForeignKey(IssueType, on_delete=models.CASCADE, related_name='tickets')
-    user = models.ForeignKey(AUTH_USER,
-                             on_delete=models.CASCADE, )
+    user = models.ForeignKey(AUTH_USER, on_delete=models.CASCADE, )
+    jira_response = models.JSONField(null=True,blank=True)
